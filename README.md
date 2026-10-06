@@ -29,3 +29,6 @@ After GitHub Pages is active, you can configure your custom domain in its Pages 
 - `assets/`: images, CV and evidence portfolio PDFs.
 
 Review the included PDFs and portfolio content before making the repository public.
+
+
+Deployment refresh: 6 October 2026.
