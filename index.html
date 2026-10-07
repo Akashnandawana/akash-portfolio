@@ -1,10 +1,7 @@
 <!doctype html>
 <html lang="en-GB">
 <head>
-<!doctype html>
 <html lang="en-GB">
-<head>
-
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8FN8V34SQ"></script>
   <script>
@@ -102,4 +99,253 @@
 <template id="detail-template-technology" data-title="Technical depth"><section class="chapter frame compact-technology"><div class="section-heading chapter-heading"><div><h2 class="chapter-title">Technology</h2><h3 class="chapter-statement">enables the strategy.</h3></div></div><p class="technology-tools">Microsoft Fabric · Power BI · SQL · Python · Oracle · CRM · Power Automate</p><p class="technology-practices">Data Architecture · ETL/ELT · Semantic Modelling · Governance · Automation</p><a class="inline-evidence" href="#details-platform" data-detail="platform">Explore technical depth</a></section></template>
 <template id="detail-template-work" data-title="Connected product innovation"><article class="detail-project"><p class="eyebrow">01 / Pre-sales · Commercial decision tool · Live</p><h3>Clean360</h3><h4>Business problem</h4><p>The sales conversation needed a stronger way to prove customer value. There was no customer savings calculator to turn operational requirements into a quantified business case.</p><h4>My contribution</h4><p>I identified the opportunity and independently developed this solution.</p><ul><li>A calculation engine using labour, water, chemical and energy assumptions.</li><li>Estimated savings and ROI / payback outputs, supported by a cost waterfall.</li><li>Weighted product-fit scoring using productivity, runtime, recommended quantity, water flow, capacity and technical suitability.</li><li>A downloadable customer business case and a route to a free demonstration.</li></ul><h4>Business value</h4><p>Creates a repeatable and explainable way to match requirements to products, and connects the analysis to the next commercial action.</p><p class="detail-note">Live self-initiated solution. The screenshots use fictional demonstration inputs to illustrate the savings calculations.</p><figure><div class="paired"><img src="assets/clean360-results.webp" alt="Clean360 results showing estimated savings, ROI and a cost waterfall"><img src="assets/clean360-business-case.webp" alt="Downloadable business case from Clean360"></div><figcaption>Original live output and customer-ready PDF. Values are demonstration inputs.</figcaption></figure></article><article class="detail-project"><p class="eyebrow">02 / Post-sales · Digital identity &amp; support · Prototype</p><h3>CleanIQ + SmartAssist</h3><h4>Business problem</h4><p>Machine owners need a clear starting point for support: the exact model, its ownership context and checks that are relevant to their machine.</p><h4>My contribution</h4><p>I identified the opportunity and independently developed this solution.</p><ul><li>An NFC-enabled machine identity showing model, serial, purchase and warranty context.</li><li>A guided, machine-specific SmartAssist diagnostic journey.</li><li>Resolution routes to the correct consumables, accessories, spares or support.</li><li>A concept for turning recurring support patterns into evidence for Product and R&amp;D.</li></ul><h4>Business value</h4><p>Reduces the need to search generic manuals or parts lists. Machine context can support a more useful relationship throughout ownership.</p><p class="detail-note">Working prototype and journey. Directors and Product Management have reviewed the concept; phased development is under discussion. Support savings have not been quantified.</p><figure class="paired"><img src="assets/machine-identity.webp" alt="NFC machine identification with model, serial, purchase date and warranty"><img src="assets/smartassist-diagnosis.webp" alt="SmartAssist step showing the low battery charge check"><figcaption>Identify the exact machine, then guide the user through relevant checks.</figcaption></figure><figure><img src="assets/smartassist-machine.webp" alt="SmartAssist machine selection and problem selection screen"><figcaption>The machine context guides the support journey.</figcaption></figure></article><article class="detail-project"><p class="eyebrow">03 / In-use intelligence · Physical + digital · Prototype</p><h3>Trackable Machine</h3><h4>Business problem</h4><p>Customers had limited visibility of real machine runtime and usage. That made it harder to understand utilisation, cleaning output and maintenance needs.</p><h4>My contribution</h4><p>I identified the opportunity and independently developed this solution.</p><ul><li>A physical ESP32, encoder and OLED proof of concept.</li><li>Movement and runtime capture, with derived distance and calculated cleaning area.</li><li>A web interface for cleaner / site sessions, utilisation, productivity and cleaning history.</li><li>Runtime-based brush and filter maintenance examples.</li></ul><h4>Business value</h4><p>Shows how machine usage data can help customers plan maintenance and understand output, while building a future evidence base for product reliability and development.</p><p class="detail-note">Independently built physical and digital proof of concept. Movement/runtime are measured; distance and area are calculated. Exact indoor positioning and tank sensing are future capabilities.</p><figure><img src="assets/owner-dashboard.webp" alt="Trackable Machine owner dashboard with cleaning performance and maintenance indicators"><figcaption>Original owner dashboard prototype.</figcaption></figure><figure class="paired"><img src="assets/hardware-prototype.webp" alt="ESP32 and OLED breadboard prototype"><img src="assets/firmware.webp" alt="Encoder firmware and successful upload in the Arduino development environment"><figcaption>Original bench prototype and encoder firmware evidence.</figcaption></figure></article></template>
 <template id="detail-template-all" data-title="Portfolio &amp; evidence"><div class="detail-index"><a href="#details-sku" data-detail="sku">Product rationalisation</a><a href="#details-pricing" data-detail="pricing">Pricing & margin</a><a href="#details-budget" data-detail="budget">Budgeting & forecasting</a><a href="#details-management" data-detail="management">BI transformation</a><a href="#details-performance" data-detail="performance">Commercial performance</a><a href="#details-platform" data-detail="platform">Data platform & governance</a><a href="#details-automation" data-detail="automation">Capacity & automation</a><a href="#details-method" data-detail="method">My decision framework</a><a href="#details-leadership" data-detail="leadership">How I lead</a><a href="#details-technology" data-detail="technology">Technical depth</a><a href="#details-work" data-detail="work">Connected product innovation</a></div><p><a href="#full-journey" data-open-journey>Explore my full journey</a></p><p><a href="assets/Akash_Nandawana_Evidence_Portfolio.pdf" download>Download the evidence portfolio PDF</a></p></template>
-</body></html>
+<!-- Akash Portfolio GA4 Event Tracking -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  function trackEvent(eventName, params = {}) {
+    if (typeof gtag === "function") {
+      gtag("event", eventName, params);
+    }
+  }
+
+  document.addEventListener("click", function (e) {
+
+    const element = e.target.closest("a, button, summary");
+    if (!element) return;
+
+    const text = (element.innerText || element.textContent || "")
+      .trim()
+      .toLowerCase();
+
+    const href = element.getAttribute("href") || "";
+
+
+    /* ==========================================================
+       CV CLICK
+    ========================================================== */
+
+    if (
+      href.toLowerCase().includes("akash_nandawana_cv.pdf") ||
+      text.includes("download cv") ||
+      text.includes("view cv") ||
+      text === "cv"
+    ) {
+      trackEvent("cv_click", {
+        link_text: text,
+        link_url: href
+      });
+    }
+
+
+    /* ==========================================================
+       EVIDENCE PORTFOLIO PDF
+    ========================================================== */
+
+    if (
+      href.toLowerCase().includes("evidence_portfolio.pdf") ||
+      text.includes("evidence portfolio")
+    ) {
+      trackEvent("evidence_portfolio_click", {
+        link_text: text,
+        link_url: href
+      });
+    }
+
+
+    /* ==========================================================
+       LINKEDIN
+    ========================================================== */
+
+    if (href.includes("linkedin.com")) {
+      trackEvent("linkedin_click", {
+        link_text: text,
+        link_url: href
+      });
+    }
+
+
+    /* ==========================================================
+       EMAIL
+    ========================================================== */
+
+    if (href.startsWith("mailto:")) {
+      trackEvent("email_click", {
+        link_text: text
+      });
+    }
+
+
+    /* ==========================================================
+       BUSINESS IMPACT CASE STUDY CARDS
+    ========================================================== */
+
+    if (element.hasAttribute("data-case")) {
+      trackEvent("impact_story_selected", {
+        story: element.getAttribute("data-case"),
+        button_text: text
+      });
+    }
+
+
+    /* ==========================================================
+       BUSINESS IMPACT LINKS
+    ========================================================== */
+
+    if (element.hasAttribute("data-case-link")) {
+      trackEvent("case_study_click", {
+        case_name: element.getAttribute("data-case-link"),
+        link_text: text
+      });
+    }
+
+
+    /* ==========================================================
+       STORY STAGES
+       The tension / My judgement / The move / The change
+    ========================================================== */
+
+    if (element.hasAttribute("data-stage")) {
+      trackEvent("story_stage_click", {
+        stage: element.getAttribute("data-stage"),
+        button_text: text
+      });
+    }
+
+
+    /* ==========================================================
+       FULL EVIDENCE / DETAIL LINKS
+    ========================================================== */
+
+    if (element.hasAttribute("data-detail")) {
+      trackEvent("evidence_detail_click", {
+        detail_name: element.getAttribute("data-detail"),
+        link_text: text
+      });
+    }
+
+
+    /* ==========================================================
+       EXPLORE MY IMPACT
+    ========================================================== */
+
+    if (
+      text.includes("explore my impact") ||
+      text === "impact"
+    ) {
+      trackEvent("explore_impact_click", {
+        button_text: text
+      });
+    }
+
+
+    /* ==========================================================
+       APPROACH / EXPLORE MY THINKING
+    ========================================================== */
+
+    if (
+      text.includes("explore my thinking") ||
+      text.includes("see how i work")
+    ) {
+      trackEvent("approach_click", {
+        button_text: text
+      });
+    }
+
+
+    /* ==========================================================
+       DECISION FRAMEWORK STEPS
+       Question / Frame / Insight / Choice / Action / Outcome
+    ========================================================== */
+
+    if (element.hasAttribute("data-method")) {
+      trackEvent("method_step_click", {
+        step: element.getAttribute("data-method"),
+        button_text: text
+      });
+    }
+
+
+    /* ==========================================================
+       STAKEHOLDER INTERACTION
+       Commercial / Finance / Supply Chain / Operations / Management
+    ========================================================== */
+
+    if (element.hasAttribute("data-stakeholder")) {
+      trackEvent("stakeholder_click", {
+        stakeholder: text,
+        stakeholder_index: element.getAttribute("data-stakeholder")
+      });
+    }
+
+
+    /* ==========================================================
+       CAREER JOURNEY
+    ========================================================== */
+
+    if (element.hasAttribute("data-open-journey")) {
+      trackEvent("career_journey_open", {
+        link_text: text
+      });
+    }
+
+
+    /* ==========================================================
+       INNOVATION PROJECTS
+       Clean360 / Trackable Machine / SmartAssist
+    ========================================================== */
+
+    if (element.hasAttribute("data-product")) {
+      trackEvent("innovation_project_click", {
+        project: element.getAttribute("data-product"),
+        button_text: text
+      });
+    }
+
+
+    /* ==========================================================
+       IMAGE / PROJECT EVIDENCE
+    ========================================================== */
+
+    if (
+      element.id === "product-image-button" ||
+      element.classList.contains("image-view")
+    ) {
+      trackEvent("project_evidence_image_open", {
+        button_text: text
+      });
+    }
+
+
+    /* ==========================================================
+       FULL JOURNEY / JOURNEY RETURN LINKS
+    ========================================================== */
+
+    if (element.hasAttribute("data-return-section")) {
+      trackEvent("journey_return_click", {
+        return_section: element.getAttribute("data-return-section"),
+        link_text: text
+      });
+    }
+
+
+    /* ==========================================================
+       CONTACT SECTION GENERIC CTA
+    ========================================================== */
+
+    if (
+      element.closest("#contact") &&
+      !href.startsWith("mailto:") &&
+      !href.includes("linkedin.com") &&
+      !href.toLowerCase().includes("akash_nandawana_cv.pdf")
+    ) {
+      trackEvent("contact_cta_click", {
+        link_text: text,
+        link_url: href
+      });
+    }
+
+  });
+
+});
+</script></body></html>
